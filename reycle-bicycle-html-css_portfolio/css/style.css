@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(231, 225, 225);*/
+}
+
+/* HEADER */
+
+/* NAVIGATION */
+
+.nav-links,
+.cta li,
+a,
+button {
+  font-family: "Bebas Neue", cursive, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #f2f2f2;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 25px 0 0;
+  height: 85px;
+  background-color: #6c63ff;
+}
+
+.active {
+  border-bottom: 1.5px solid #f2f2f2;
+  padding-bottom: 6px;
+}
+
+.logo {
+  cursor: pointer;
+  min-width: 300px;
+}
+
+header img {
+  width: 300px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 22px;
+  padding-bottom: 6px;
+}
+
+.nav-links li a:hover {
+  color: #45bf7a;
+  border-bottom: 1.5px solid #45bf7a;
+  transition: all 0.3s ease 0s;
+}
+
+button {
+  padding: 10px 25px;
+  /* background-color: rgba(0, 136, 169, 1);*/
+  background-color: rgba(140, 177, 30, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-family: "Bebas Neue", cursive, Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+}
+
+header button {
+  margin-left: 35%;
+}
+
+button:hover {
+  background-color: rgba(140, 177, 30, 0.8);
+}
+
+/* ********************************** CONTENT **********************/
+
+/*****  section 1 *****/
+
+.intro-container {
+  background-image: url("../images/bike.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: auto;
+  background-position: top left;
+  box-sizing: border-box;
+}
+
+.sub-intro {
+  flex: 1;
+  flex-basis: 30%;
+  background-color: rgba(108, 99, 255, 0.9);
+  height: 320px;
+  border: none;
+  border: 0px solid;
+  text-align: center;
+  margin: 2%;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.intro h1 {
+  font-family: "Bebas Neue", cursive, Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.intro p {
+  color: #070707;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 5px;
+  margin: 10px 8px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: "Lato", sans-serif;
+  padding: 12px;
+}
+
+.sub-intro h2 {
+  color: #f2f2f2;
+}
+
+.sub-intro p {
+  color: #f2f2f2;
+  padding-bottom: 10px;
+}
+
+.sub-intro button {
+  color: #f2f2f2;
+}
+
+.intro button {
+  font-family: "Lato", sans-serif;
+}
+
+.intro ul li {
+  display: inline-block;
+  padding: 35px;
+  margin: 45px 0;
+}
+
+.intro li a {
+  transition: all 0.3s ease 0s;
+  font-size: 22px;
+  padding: 15px;
+  color: #f2f2f2;
+  border: none;
+  border: solid #8cb11e;
+}
+
+.sub-member {
+  background-color: rgba(255, 215, 101, 0.9);
+}
+
+.sub-member h1,
+button {
+  color: #070707;
+}
+
+.sub-member h2 {
+  color: #070707;
+}
+
+.sub-intro button {
+  margin-top: 15px;
+}
+
+.login {
+  padding: 10px;
+}
+
+.sub-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-intro h1,
+h2,
+p,
+a {
+  flex: 1;
+}
+
+.sub-intro a {
+  margin-bottom: 15px;
+}
+
+/* *************    section2 *******/
+
+.use {
+  display: flex;
+  margin-top: 15px;
+  min-height: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: bisque;
+  background-image: url(../images/back2.svg);
+  box-sizing: border-box;
+}
+
+.use-bike {
+  flex: 1;
+  flex-basis: 30%;
+  background-color: #db8b8b;
+  background-color: #384575;
+  min-height: 450px;
+  border: none;
+  border: 0px solid;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.use-bike img {
+  width: 400px;
+  height: 200px;
+}
+
+.use-bike h1 {
+  font-family: "Bebas Neue", cursive, Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.use-bike p {
+  color: #f2f2f2;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 5px;
+  margin: 10px 8px;
+  text-align: center;
+}
+
+.use-bike strong {
+  text-transform: uppercase;
+}
+
+/* *************   FOOTER  *************/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.foot1 {
+  list-style: none;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.foot1 li {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.foot1 li a {
+  transition: all 0.3s ease 0s;
+  color: #070707;
+}
+
+.foot1 li a:hover {
+  color: #45bf7a;
+}
+
+.foot1 i {
+  color: #070707;
+  margin-right: 15px;
+}
+
+.copy {
+  flex: 2;
+  color: #070707;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.foot1 {
+  margin: 10px auto;
+}
+
+/******************   Mobile   *********************** */
+
+@media only screen and (max-width: 600px) {
+  .intro,
+  .use,
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .intro {
+    height: auto;
+  }
+  .sub-intro,
+  .use-bike {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .sub-intro {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .foot1 {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .intro,
+  .use,
+  .footer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sub-intro,
+  .use-bike {
+    flex: 1;
+    margin: o;
+    padding: 0;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .foot1 {
+    margin: 0 auto;
+  }
+}

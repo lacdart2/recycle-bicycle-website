@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Recycle website | account</title>
+  <!--font awesome Icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!--Ion Icons-->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet" />
+  <!--my own stylesheet-->
+  <link rel="stylesheet" href="css/style2.css" />
+</head>
+
+<body class="formBody" id="formBody">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="website logo" />
+
+          </a>
+        </div>
+        <div class="menu-icons open">
+          <i class="icon ion-md-menu"></i>
+        </div>
+        <ul class="nav-list">
+          <div class="menu-icons close">
+            <i class="icon ion-md-close"></i>
+          </div>
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="routes.html" class="nav-link">ROUTES AND TOURS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">EL- BICYCLES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">contact us </a>
+          </li>
+          <li class="nav-item">
+            <a href="account.html" class="login-btn">my account</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <main role="main-account-content">
+
+      <!--     log in existent account -->
+      <div class="forms">
+        <div class="form-wrapper" id="loginForm">
+          <div class="login-container">
+            <div class="form-container left">
+              <!--  login existent user -->
+              <div class="form-header">
+                <h2>login</h2>
+              </div>
+              <form id="formLogin" class="form">
+                <div class="form-control existent">
+                  <label for="email">Email</label>
+                  <input type="text" id="emailExistent" placeholder="Enter Your Email" required />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control existent">
+                  <label for="password">Password</label>
+                  <input type="password" id="passwordExistent" placeholder="Enter Your Password" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control btn-group">
+                  <button class="submitOld">Login</button>
+                  <a href="#" id="linkPasswordRecovery">
+                    <p>forgot your password ?</p>
+                  </a>
+                </div>
+              </form>
+            </div>
+            <!-------------------   dont have an account? create an account -->
+            <div class="form-container right">
+              <div class="form-header">
+                <h2>Don´t have an account ?</h2>
+              </div>
+              <div class="form-text">
+                <p>
+                  creating your account enables you to be a part of our recycle bicycle community, and get exclusive
+                  offers
+                </p>
+                <button id="linkCreateAccount">create account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----------------------     password recovery form   -->
+        <div class="form-container hidden-recovery" id="pw-recovery">
+          <div class="form-header">
+            <h2>password recovery</h2>
+          </div>
+          <div class="form-control form-text">
+            <p>enter your recycle bicycle email adress account</p>
+            <label for="email">Email</label>
+            <input id="emailRevocery" type="email" placeholder="Enter email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+            <button class="submit-recovery" id="linkPasswordRecovery2">
+              submit
+            </button>
+          </div>
+
+        </div>
+        <!--  password recovery confirmation  -->
+        <div class="form-container hidden-recovery2" id="pw-recovery2">
+          <div class="form-header">
+            <h2>password recovery</h2>
+          </div>
+          <div class="form-control form-text">
+            <p>
+              an email has been sent to your account email adress with the
+              instructions to recover your password
+            </p>
+
+            <button class="submit-recovery" id="backToLogin">
+              back to login
+            </button>
+          </div>
+
+        </div>
+
+        <!--   create new account -->
+        <div class="form-container hidden-form" id="createAccount">
+          <div class="form-header">
+            <h2>create account</h2>
+          </div>
+          <form id="form" class="form">
+            <div class="form-control">
+              <label for="username">username</label>
+              <input id="username" type="text" placeholder="Enter username" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="email">email</label>
+              <input id="email" type="email" placeholder="Enter email" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="password">password</label>
+              <input id="password" type="password" placeholder="Enter password" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="password2">password check</label>
+              <input id="password2" type="password" placeholder="confirm password" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <button class="create-btn">submit</button>
+            <p>
+              <a href="#" id="linkLogin">Already have an account?
+                <span>sign in<i class="fas fa-long-arrow-alt-right"></i> </span></a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <li class="footer-links"><a href="#" target="_blank">privacy policy</li></a>
+          <li class="footer-links"><a href="#" target="_blank">cite map</a></li>
+          <li class="footer-links"><a href="#" target="_blank">contact us </a></li>
+        </div>
+        <div class="footer-section">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p class="copy">copyright 2020 &copy; Lakhdar Hafsi</p>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
